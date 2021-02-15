@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(163, 110, 110);
+    margin: auto;
+
+    
+}
+.logo{width: 200px;
+height: 200px;
+display: block; margin: auto;}
+header nav ul li {display:inline;
+padding: 50px;
+text-transform: uppercase;}
+header nav ul{text-align: center;}
+H1{text-align: center;}
+p{line-height: 20px; font-size: 20px;}
+
+main ul li:nth-child(odd)
+{background: darkslateblue;
+    border-radius: 10px;
+    display: block;
+}
+
+main ul li:nth-child(even)
+{background: rgb(109, 102, 155);
+    border-radius: 10px;
+    display:block;
+}
