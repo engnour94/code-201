@@ -2,40 +2,67 @@
 let userName = prompt('Enter your name');
 console.log(userName);
 alert('Hello '+ userName);
+
+
 let ownerAge= prompt('Do you think that I am over 30 years old?','yes or no');
-console.log(ownerAge);
-let age = ownerAge.toLowerCase();
-
-if (age ==='yes')
-{ alert('I am just 26');}
-
-if ( age === 'no') {
-  alert ('You are right ^_^');
+while ((ownerAge === null) || (ownerAge === '') || (ownerAge.toLowerCase() !== 'yes') && (ownerAge.toLowerCase() !== 'no'))
+{
+  ownerAge= prompt('Do you think that I am over 30 years old?','yes or no');
+}
+if(ownerAge.toLowerCase() ==='yes'){
+  console.log('False');
+  alert('I am just 26');
+}
+else if(ownerAge.toLowerCase() ==='no'){
+  console.log('true');
+  alert('You are right ^_^');
 }
 
 let ownerTalent = prompt('Do you think that I have any talents?');
-console.log(ownerTalent);
-let talent = ownerTalent.toLowerCase();
-if(talent ==='yes')
+while ((ownerTalent === null) || (ownerTalent === '') || (ownerTalent.toLowerCase() !== 'yes') && (ownerTalent.toLowerCase() !== 'no'))
 {
+  ownerTalent = prompt('Do you think that I have any talents?');
+}
+if(ownerTalent.toLowerCase() ==='yes'){
+  console.log('True');
   alert('you are right I am multi talented');
 }
-if(talent==='no'){
-  alert('I draw and play guitar ^_^');
+else if(ownerTalent.toLowerCase() ==='no'){
+  console.log('False');
+  alert('I am  an artist and guitarist ^_^');
 }
+
+
 let ownerMeeting=prompt('Do you want to meet me?');
-console.log(ownerMeeting);
-let meeting = ownerMeeting.toLowerCase();
-if (meeting === 'yes') {
-  alert('I am lucky for you');
+while ((ownerMeeting === null) || (ownerMeeting === '') || (ownerMeeting.toLowerCase() !== 'yes') && (ownerMeeting.toLowerCase() !== 'no'))
+{
+  ownerMeeting=prompt('Do you want to meet me?');
 }
-if (meeting==='no') {
+if(ownerMeeting.toLowerCase() ==='yes'){
+  console.log('True');
+  alert('I am really so lucky for you ^___^');
+}
+else if(ownerMeeting.toLowerCase() ==='no'){
+  console.log('False');
   alert('you are the looser ^_^');
 }
 
 let ownerPets=prompt('Do I have any pets?');
-console.log(ownerPets);
-let pets =ownerPets.toLowerCase();
-if (pets==='yes') { alert('I dont have any pets but i wish i have a cat');
+while ((ownerPets === null) || (ownerPets === '') || (ownerPets.toLowerCase() !== 'yes') && (ownerPets.toLowerCase() !== 'no'))
+{
+  ownerPets=prompt('Do I have any pets?');
 }
-if(pets==='no') {alert ('you are right');}
+if(ownerPets.toLowerCase() ==='yes'){
+  console.log('False');
+  alert('I dont have any pets but i wish i have a cat');
+}
+else if(ownerPets.toLowerCase() ==='no'){
+  console.log('True');
+  alert('you are right');
+}
+
+
+
+
+
+
