@@ -15,13 +15,13 @@ H1{text-align: center;}
 p{line-height: 20px; font-size: 20px;}
 
 main ul li:nth-child(odd)
-{background: rgb(224, 93, 203);
+{background: rgb(177, 154, 173);
     border-radius: 10px;
     display: block;
 }
 
 main ul li:nth-child(even)
-{background: rgb(100, 150, 115);
+{background: rgb(145, 185, 157);
     border-radius: 10px;
     display:block;
 }
