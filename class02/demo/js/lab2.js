@@ -7,19 +7,25 @@ alert('Hello '+ userName + '🧡');
 
 
 let ownerAge= prompt('Do you think that I am over 30 years old?','yes/y or no/n').toLowerCase();
-while ( (ownerAge !== 'yes') && (ownerAge !== 'no' ) && (ownerAge !== 'y' ) && (ownerAge !== 'n' ))
+const age= function(myage)
 {
-  ownerAge= prompt('Do you think that I am over 30 years old?','yes/y or no/n').toLowerCase();
-}
-if((ownerAge ==='yes')||(ownerAge ==='y')){
-  console.log('False');
-  alert('I am just 26');
-}
-else if((ownerAge ==='no')||(ownerAge ==='n')){
-  console.log('true');
-  alert('You are right ^_^');
-  score++;
-}
+  ownerAge=myage;
+  while ( (ownerAge !== 'yes') && (ownerAge !== 'no' ) && (ownerAge !== 'y' ) && (ownerAge !== 'n' ))
+  {
+    ownerAge= prompt('Do you think that I am over 30 years old?','yes/y or no/n').toLowerCase();
+  }
+  if((ownerAge ==='yes')||(ownerAge ==='y')){
+    console.log('False');
+    alert('I am just 26');
+  }
+  else if((ownerAge ==='no')||(ownerAge ==='n')){
+    console.log('true');
+    alert('You are right ^_^');
+    score++;
+  }
+
+};
+age(ownerAge);
 
 let ownerTalent = prompt('Do you think that I have any talents?','yes/y or no/n').toLowerCase();
 while ((ownerTalent!== 'yes') && (ownerTalent !== 'no'&& (ownerTalent !== 'y' ) && (ownerTalent !== 'n' )))
@@ -100,7 +106,7 @@ for (let i = 0; i < 4; i++) {
     numSisters = prompt('How many sisters I have?', 'number');}
   else if (numSisters < 5){
     alert('too low!');
-    numSisters = prompt('How many sisters I have?', 'number');;
+    numSisters = prompt('How many sisters I have?', 'number');
   }
 }
 alert('I have 5 sisters 😀');
