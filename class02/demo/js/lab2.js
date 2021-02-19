@@ -2,9 +2,13 @@
 
 let score=0;
 let userName = prompt('Enter your name');
-console.log(userName);
-alert('Hello '+ userName + '🧡');
+const nameFunction = function (name) {
+  userName = name;
+  console.log(userName);
+  alert('Hello '+ userName + '🧡');
 
+};
+nameFunction(userName);
 
 let ownerAge= prompt('Do you think that I am over 30 years old?','yes/y or no/n').toLowerCase();
 
@@ -17,7 +21,7 @@ const agefunction = function (age) {
     ownerAge= prompt('Do you think that I am over 30 years old?','yes/y or no/n').toLowerCase();
   }
   if((ownerAge ==='yes')||(ownerAge ==='y')){
-    console.log('your answer is : '+ ownerAge + ' it is false the righi answer is 26');
+    console.log('your answer is : '+ ownerAge + ' it is false the right answer is 26');
     alert('I am just 26');
   }
   else if((ownerAge ==='no')||(ownerAge ==='n')){
@@ -133,16 +137,16 @@ const sisterFunction = function (sisters)
   }
   for (let i = 0; i < 4; i++) {
     if (ownerSisters === 5) {
-      alert('Awesome! Corrtect answer ^_^');
+      alert('Awesome! Correct answer ^_^');
       score++;
       console.log(ownerSisters+ ' correct answer i have 5 sisters');
       break;
     } else if (ownerSisters > 5) {
       alert('too high!');
-      ownerSisters = prompt('How many sisters I have?', 'number');}
+      ownerSisters = Number(prompt('How many sisters I have?', 'number'));}
     else if (ownerSisters < 5){
       alert('too low!');
-      ownerSisters = prompt('How many sisters I have?', 'number');
+      ownerSisters = Number(prompt('How many sisters I have?', 'number'));
       console.log(ownerSisters+ ' wrong! try again');
     }
   }
