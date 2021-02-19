@@ -1,9 +1,9 @@
-body{
-    background-color: rgb(163, 110, 110);
-    margin: auto;
-
+body { background-color: khaki;
+    width: 1100px;
+    margin:auto;
     
 }
+
 .logo{width: 200px;
 height: 200px;
 display: block; margin: auto;}
@@ -11,7 +11,12 @@ header nav ul li {display:inline;
 padding: 50px;
 text-transform: uppercase;}
 header nav ul{text-align: center;}
-H1{text-align: center;}
+H1{text-align: center;
+    color: white;
+    text-shadow: purple 2px 2px;
+font-style: oblique;
+border-style:double ;
+border-color:  orchid; background-image: url("https://data.whicdn.com/images/283936979/original.jpg");}
 p{line-height: 20px; font-size: 20px;}
 
 main ul li:nth-child(odd)
@@ -24,4 +29,14 @@ main ul li:nth-child(even)
 {background: rgb(145, 185, 157);
     border-radius: 10px;
     display:block;
+}
+main ol {
+    border-style: double;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-color: olive;
+  
+    display:inline-block ;
+    margin: auto;
+
 }
